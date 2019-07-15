@@ -1,0 +1,48 @@
+
+<div class = {{divtype}} >
+
+    <div class = title> {{divtype}} </div>
+
+        <div class = forms> 
+
+        <form method = "GET" action = "http://localhost:3000/vfs">
+            <input type = "hidden" name = "osview" value = {{divtype}}> </input>
+
+            Command <select name = "command">
+                <option  value = 'ls'> ls </option>
+                <option  value = 'cat'> cat </option>
+                <option  value = 'tree'> tree </option>
+            </select>
+
+            {{!-- Command  <input type = "text" name = "command" value = 'ls'> </input> --}}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Option <input type = "text" name = "option"> </input>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Path   <input type = "text" name = "path"> </input>
+            <input type = "submit">
+
+        </form>
+
+     
+        <form method = "POST" action = "http://localhost:3000/vfs">
+            <input type = "hidden" name = "osview" value = {{divtype}}> </input>
+
+            Command <select name = "command">
+                <option  value = 'mkdir'> mkdir </option>
+                <option  value = 'ls'> ls </option>
+                <option  value = 'write'> write </option>
+            </select>
+            {{!-- Command  <input type = "text" name = "command" value = 'mkdir'> </input> --}}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Path   <input type = "text" name = "path"> </input>
+            &nbsp;&nbsp;&nbsp;Content <input type = "text" name = "content"> </input>
+            <input type = "submit">
+
+        </form>
+
+       <div class = terminalwindow>
+           <p> 
+               {{{response}}}
+           </p>
+       </div>
+
+        </div>
+    
+</div>

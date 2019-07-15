@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(33, 34, 37);
+}
+
+.title{
+    font-size: 32px;
+    font-family: Helvetica, sans-serif;
+    color:white;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.index{
+    text-align: center;
+    font-size: 32px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+select{
+    font-size: 16px;
+}
+
+input[type=submit]{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+.options{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.Ubuntu{
+    background-color: rgb(255, 185, 124);
+}
+.Debian{
+    background-color: rgb(37, 206, 206);
+}
+
+.forms{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 1em;
+}
+p{
+    margin: 2px;
+}
+
+.terminalwindow{
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    background-color:  rgb(33, 34, 37);
+}
