@@ -1,4 +1,4 @@
-Homework #01 - Connectmoji
+# Connectmoji
 
 An interactive 2-player (computer vs human player) "connection" game.
 
