@@ -1,0 +1,58 @@
+<div class = everything>
+
+    <h1> Books </h1>
+
+    {{!-- Filter option --}}
+    <div class = filter> 
+        Filter By: 
+        <form method = "GET" action = "http://localhost:3000/books">
+            <p class="options">
+                <select name = "category">
+                    <option value="">--Please choose an option--</option>
+                    <option name = "title" value="title">Title</option>
+                    <option name = "author" value="author">Author</option>
+                    <option name = "isbn" value="isbn">ISBN</option>
+                </select>
+            </p>
+            <p>  <input type = "text" name = "filterby"> </input></p>
+        <input type = "submit" value = "filter">
+    </form>
+
+    </div>
+
+    {{!-- List of books     --}}
+    {{!-- <div class = headers>
+    <table>
+        <tr> 
+            <th class = t>TITLE</th>
+            <th class = a>AUTHOR</th>
+            <th class = i>ISBN</th>
+        </tr>
+    </table>
+    </div> --}}
+    {{#if error }}
+    <div class = totalvisits>
+        <p>&nbsp;</p>
+            &nbsp; &nbsp; &nbsp; {{error}}
+        </div>
+    {{/if}}
+    
+
+    <div class = book>
+    <table>
+    {{#each books as |b|}}
+        <tr> 
+            <th class = titlelink> <a href = "http://localhost:3000/books/{{slug}}"> {{title}} </a> </th>
+            <th>{{author}} </th>
+            <th>{{isbn}}</th>
+        </tr>
+    {{/each}}
+    </table>
+    </div>
+    
+  <div class = totalvisits>
+      Total visits to this site: {{visits}}
+    </div>
+</div>
+
+  

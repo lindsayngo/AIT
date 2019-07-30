@@ -1,0 +1,58 @@
+
+<head>
+	 <link rel = "stylesheet" href = "http://localhost:3000/css/style.css">
+<title></title>
+</head>
+
+<body>
+
+    <div class = everything>
+
+        <h1> Reviews For {{title}} by {{author}} </h1>
+        <div class = filter> 
+            Add a Review: 
+            <form method = "POST" action = "http://localhost:3000/books/{{slug}}/comments">
+            <input type = "text" name = "review" style = "width:93%;height:50px;margin-top:10px"> 
+            <p> Name:&nbsp;&nbsp;&nbsp;
+            <input type = "text" name = "name">
+            </p>
+            <p>
+            Rating:&nbsp;&nbsp;&nbsp;
+            <input type = "range" name = "rating" min="0"max="5">
+            </p>
+            <p>
+            <input type = "submit" value = "comment">
+            </p>
+            </form>
+        </div>
+
+        {{#if noRevs}}
+          <div class = rev>
+                {{noRevs}} 
+           </div>
+        {{/if}}
+ 
+
+        <div class = book>
+            <table> 
+                {{#each reviews as |r|}}
+                <tr>
+                    <th class = sun> {{#ifeq rating 5}}☃  ☃  ☃  ☃  ☃{{/ifeq}}
+                        {{#ifeq rating 4}}☃  ☃  ☃  ☃{{/ifeq}}
+                        {{#ifeq rating 3}}☃  ☃  ☃{{/ifeq}}
+                        {{#ifeq rating 2}}☃  ☃{{/ifeq}}
+                        {{#ifeq rating 1}}☃{{/ifeq}}
+                        {{#ifeq rating 0}}{{/ifeq}} </th>
+                    <th> {{text}} by {{name}} </th>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+
+    <div class = totalvisits>
+      Total visits to this site: {{visits}}
+    </div>
+
+    </div>  
+
+</body>

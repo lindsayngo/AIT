@@ -1,0 +1,117 @@
+body{
+    color: rgba(185, 21, 21, 0.815);
+    background-color:rgb(245, 207, 207);
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+h1{
+   margin-left: 28px;
+   margin-top: 16px;
+   margin-bottom: 0px;
+}
+
+a{
+    font-size: 16px;
+    color:rgba(185, 21, 21, 0.815);
+    text-decoration: none;
+}
+a:visited{
+    color:rgba(185, 21, 21, 0.815);
+    text-decoration: none;
+}
+a:-webkit-any-link{
+    color:rgba(185, 21, 21, 0.815);
+    text-decoration: none;
+}
+
+.headers{
+    margin-left: 38px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.titlelink{
+    text-decoration: underline;
+}
+
+.sun{
+    font-size: 24px;
+}
+
+th{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 22px;
+    padding-right:130px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+
+.t{
+    padding-left: 5px;
+    padding-right: 135px;
+    font-weight: bold;
+}
+.a{
+    padding-right: 100px;
+    font-weight: bold;
+}
+.i{
+    padding-right: 113px;
+    font-weight: bold;
+}
+
+.links{
+   padding: 8px;
+   margin: 12px;
+   padding-top: 20px;
+   padding-bottom: 0px;
+}
+
+.everything{
+    border-style: double;
+    border-color: rgba(185, 21, 21, 0.815);
+    margin: 26px;
+}
+
+.book{
+    overflow: hidden;
+    padding: 5px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+}
+
+.filter{
+    padding-left: 28px;
+    padding-top: 5px;
+}
+
+
+.addbook{
+    border-style: double;
+    border-color: rgba(185, 21, 21, 0.815);
+    margin: 26px;
+    padding: 24px;
+}
+
+.addform{
+    margin-bottom: 36px;
+}
+
+.totalvisits{
+    font-size: 20px;
+    padding: 8px;
+    padding-top: 0px;
+    padding-bottom: 18px;
+    margin: 12px;
+}
+
+.rev{
+    overflow: hidden;
+    padding: 5px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    margin-left: 10%;
+}
