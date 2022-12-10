@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "eslint": "^5.16.0",
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   },
   "name": "zarusoba88-homework06",
   "description": "",
